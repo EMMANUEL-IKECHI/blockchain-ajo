@@ -1,51 +1,16 @@
-# Blockchain Ajo / Esusu DApp 💰
+# React + Vite
 
-A decentralized cooperative savings platform built to bring transparency, trust, and automation to traditional group savings (Ajo/Esusu) systems using **blockchain technology**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This project is a collaboration between:
-- **Ikechi Emmanuel Chiemela** – Full-Stack Developer & Ethical Hacker  
-- **Chukwuemeka Precious** – Blockchain Engineer  
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Project Overview
+## React Compiler
 
-**Blockchain Ajo/Esusu** enables users to collectively contribute funds into shared pools with clearly defined goals, schedules, and payout structures — all managed by **smart contracts**.  
-Every transaction is **immutable**, **auditable**, and **transparent** on the blockchain, eliminating the risk of mismanagement or fraud.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-This system blends **decentralized finance (DeFi)** concepts with real-world cooperative culture.
+## Expanding the ESLint configuration
 
----
-
-## 🧩 Core Features
-
-| Feature | Description |
-|----------|-------------|
-| **Decentralized Groups** | Users can create or join savings groups (Ajo/Esusu cycles). |
-| **Smart Contract Automation** | Deposits, payouts, and penalties are handled by Ethereum smart contracts. |
-| **Wallet Integration** | MetaMask or WalletConnect used for identity and transactions. |
-| **Activity Dashboard** | Real-time tracking of contributions and payouts. |
-| **Transaction Ledger** | Transparent record of every contribution and withdrawal. |
-| **Security Layer** | Includes smart-contract auditing, penetration testing, and event-based monitoring. |
-
----
-
-## 🧠 System Architecture
-
-### **High-Level Flow**
-1. **User Registration:** Connects wallet, sets up identity (Web3 login).  
-2. **Group Creation:** User defines group rules — amount, participants, payout order.  
-3. **Smart Contract Deployment:** Automatically generates a new contract for that group.  
-4. **Contribution Cycle:** Users send funds via blockchain transactions.  
-5. **Automated Payout:** Contract verifies contributions and releases payout to next recipient.  
-6. **Security Auditing Layer:** Logs every transaction and anomaly for review.
-
-### **System Diagram**
-```mermaid
-flowchart TD
-    A[User Wallet] -->|Connects| B[DApp Frontend]
-    B -->|API Calls| C[Node.js Backend]
-    C -->|Deploys| D[Smart Contract]
-    D --> E[Blockchain Network]
-    D --> F[Security Monitor / Logger]
-    F --> G[Admin Dashboard]
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
